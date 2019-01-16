@@ -17,7 +17,7 @@ The message to android tv is send by using nfa, a Go command line app to send no
 
 Notifications for Android TV / Notifications for Fire TV  must be installed on on your TV in order for the notification to be displayed, you may find it on Google Play. Once installed you have to open the application once in order for the app to be initialized on the tv so it can accept notifications.
 
-Distribution is packaged as a debian package (.deb) file and includes an init script and the golang nfa binary, it also includes the binary version of sipcallnotifier (arch i386) and the perl version(sipcallnotfier.perl) for ease of use, in case you want to make changes. If this is the case do not forget to change your init script to run sipcallnotfier.pl instead of sipcallnotifier.
+Distribution is packaged as a debian package (.deb) file and includes an init script and the golang nfa binary, it also includes the binary version of sipcallnotifier (arch i386) and the perl version(sipcallnotfier.pl) for ease of coding, in case you want to make changes. If this is the case, do not forget to change your init script (/etc/init.d/sipcallnotify) to run sipcallnotfier.pl instead of sipcallnotifier.
 
 If you find it to be too Greek for you, you may change the notification message by changing the source (or adding it as a config option!! pull requests accepted).
 
