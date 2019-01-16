@@ -13,7 +13,7 @@ The programm is solely written in perl but can be compiled as a standard executa
 
 A sqlite database is initialized in memory in order to load contacts.cvs and blacklist.
 
-The message to android tv is send by using nfa, a Go command line app to send notifications to Notifications for Android TV / Notifications for Fire TV that can be found here https://github.com/robbiet480/nfa , you may build by simply running "go get github.com/robbiet480/nfa" and get it from your golang bin dir.
+The message to android tv is send by using nfa, a Go command line app to send notifications to Notifications for Android TV / Notifications for Fire TV that can be found here https://github.com/robbiet480/nfa , you may build it by simply running "go get github.com/robbiet480/nfa" and get it from your golang bin dir.
 
 Notifications for Android TV / Notifications for Fire TV  must be installed on on your TV in order for the notification to be displayed, you may find it on Google Play. Once installed you have to open the application once in order for the app to be initialized on the tv so it can accept notifications.
 
