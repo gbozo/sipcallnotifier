@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ "$1" = "remove" ]; then
+rm /usr/sbin/sipcallnotify
+rm /usr/sbin/sipcallnotify.pl
+rm /usr/sbin/nfa
+update-rc.d -f sipcallnotify remove
+fi

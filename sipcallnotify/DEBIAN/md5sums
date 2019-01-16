@@ -1,0 +1,7 @@
+5ac53a7c6272db9633b8ad0112ba8028  usr/sbin/sipcallnotify.pl
+0451ec5e6e100a529f7e62251e6fda18  usr/sbin/nfa
+9c0b1645e73671f7d86949c373f1de54  usr/sbin/sipcallnotify
+64fef815703dda7b944085ec1d93e05a  etc/init.d/sipcallnotify
+251ff189d7f4e030a990336a06df2aea  etc/sipcallnotify/blacklist.example.csv
+f2be3225e931b59034a02512570c7d1a  etc/sipcallnotify/main.sample.conf
+1e685dc4f8747ae7f1464912d3429bda  etc/sipcallnotify/contacts.example.csv

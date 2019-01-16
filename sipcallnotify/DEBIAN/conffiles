@@ -1,0 +1,4 @@
+/etc/sipcallnotify/main.conf
+/etc/sipcallnotify/contacts.csv
+/etc/sipcallnotify/blacklist.csv
+/etc/init.d/sipcallnotify
