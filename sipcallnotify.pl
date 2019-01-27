@@ -32,8 +32,8 @@ my $local_address = Net::Address::IP::Local->public;
 
 Proc::Daemon::Init;
 
-my $continue = 1;
-$SIG{TERM} = sub { $continue = 0 };
+my $continue = 0;
+$SIG{TERM} = sub { $continue = 1 };
 
 my $logconf = qq(
 log4perl.rootLogger=INFO, LOGFILE
@@ -208,11 +208,12 @@ $register = sub {
 
 };
 
-while ($continue) {
-    $log->debug("Loop start...");
-    $register->();
-    $log->debug("Registrar complete...Looping...");
-    $ua->loop;
+$register->();
+$log->debug("Registrar complete...Looping...");
 
+#while ($continue) {
+    $log->debug("Loop start...");
+#    $register->();
+    $ua->loop(\$continue);
     $log->info("End.");
-}
+#}
